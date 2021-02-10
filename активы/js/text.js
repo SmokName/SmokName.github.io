@@ -20,7 +20,7 @@ $(function () {
 }); 
 $(function () { 
     $(".typed").typed({ 
-        strings: ['Smoke', "kto eto?", "Python developer", "Hentai", "bruh"], 
+        strings: ['Smoke', "kto eto?", "Python developer", "Koder", "bruh"], 
         typeSpeed: 100, 
         loop: true, 
         cursorChar: "|", 
