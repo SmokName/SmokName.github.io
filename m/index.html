@@ -9,17 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/favico/ico.png" type="image/png">
     <script src="https://sindresorhus.com/devtools-detect/index.js"></script>
-    <link rel="stylesheet" href="../assets/fonts/gsans/style.css">
+    <link rel="stylesheet" href="../assets/fonts/gothampro/style.css">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../assets/css/m/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/m/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="jquery-3.4.1.js"></script>
-    <script src="../js/text.js"></script>
+    <script src="../assets/js/text.js"></script>
+    <script src="../assets/js/typed.min.js"></script>
     <link rel="stylesheet" href="../assets/vars.css">
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <meta name="theme-color" content="#191919">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -58,9 +57,9 @@
             <div class="avatar-container"><img src="../assets/images/ava.jpg" oncontextmenu="return false;"
                     class="avatar">
             </div>
-            <h2><span id="name"></span></h2>
+            <h2><span id="name">Smoke</span></h2>
             <hr width="295">
-            <h3><span id="description"></span></h3>
+            <h3><span class="typed"></span><span class="typed-cursor"></span></h3>
         </div>
         <div class="center pizdec">
             <h2>Links</h2>
@@ -86,13 +85,5 @@
         </div>
     </header>
 </body>
-<script>
-    new Typed('#description', {
-        strings: ['Smoke', "Kto eto?", "Python developer", "Coder", "Music lover...", "MotherHacker", "Im clown", "Bruh"],
-        typeSpeed: 100,
-        cursorChar: '|',
-        loop: true
-    });
-</script>
 
 </html>
