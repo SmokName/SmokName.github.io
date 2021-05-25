@@ -1,3 +1,3 @@
-#SmokName.github.io
+#smokname.github.io
 
 
