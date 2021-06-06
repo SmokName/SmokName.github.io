@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/favico/ico.png" type="image/png">
     <script src="https://sindresorhus.com/devtools-detect/index.js"></script>
-    <link rel="stylesheet" href="../assets/fonts/gothampro/style.css">
+    <link rel="stylesheet" href="../assets/fonts/gsans/style.css">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../assets/css/m/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/m/style.css">
@@ -89,6 +89,84 @@
             <a href="javascript://" onclick="location.href='http://qiwi.com/n/SMOK228'" class="mx-2 social-icon"
                 data-tooltip="Qiwi">
                 <span class="mdi mdi-heart-outline"></span>
+            </a>
+        </div>
+        <div class="center pizdec">
+            <h2>Music</h2>
+        </div>
+        <audio id="1">
+            <source src="../assets/music/1.m4a" type="audio/mpeg">
+        </audio>
+        <audio id="2">
+            <source src="../assets/music/2.m4a" type="audio/mpeg">
+        </audio>
+        <audio id="3">
+            <source src="../assets/music/3.m4a" type="audio/mpeg">
+        </audio>
+        <script>
+            var f = true, t = true, k = true;
+            function change(param) {
+                var ans = param;
+                if (param == false) { ans = true; }
+                else if (param == true) { ans = false; }
+                return ans;
+            }
+            function play(param, id) {
+                var p = param;
+                if (param == false) { p = true; }
+                else if (param == true) { p = false; }
+                if (id == "1") {
+                    if (p) {
+                        document.getElementById('2').pause();
+                        document.getElementById('3').pause();
+                        document.getElementById('1').play();
+                    }
+                    if (!p) {
+                        document.getElementById('1').pause();
+                        document.getElementById('2').pause();
+                        document.getElementById('3').pause();
+                    }
+                }
+                else if (id == "2") {
+                    if (p) {
+                        document.getElementById('1').pause();
+                        document.getElementById('3').pause();
+                        document.getElementById('2').play();
+                    }
+                    if (!p) {
+                        document.getElementById('1').pause();
+                        document.getElementById('2').pause();
+                        document.getElementById('3').pause();
+                    }
+                }
+                else if (id == "3") {
+                    if (p) {
+                        document.getElementById('1').pause();
+                        document.getElementById('2').pause();
+                        document.getElementById('3').play();
+                    }
+                    if (!p) {
+                        document.getElementById('1').pause();
+                        document.getElementById('2').pause();
+                        document.getElementById('3').pause();
+                    }
+                }
+            }
+        </script>
+        <div class="social linkMenu d-flex justify-content-center">
+            <a href="javascript://" onclick="play(f, '1'); f = change(f);" class="mx-2 social-icon" data-tooltip="Король и
+                Шут - Мёртвый Анархист">
+                <span class="mdi mdi-music"></span>
+            </a>
+
+            <a href="javascript://" onclick="play(t, '2'); t = change(t);" class="mx-2 social-icon" data-tooltip="Король и
+                Шут - Мой характер">
+                <span class="mdi mdi-music"></span>
+            </a>
+
+            <a href="javascript://" onclick="play(k, '3'); k = change(k);" class="mx-2 social-icon" data-tooltip="Король и
+                Шут - Кукла колдуна">
+                <span class="mdi mdi-music"></span>
             </a>
         </div>
     </header>
