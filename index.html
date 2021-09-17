@@ -30,6 +30,26 @@
         }
         document.body.style.backgroundImage = "url('assets/anims/bg.gif')";
     </script>
+    <div id="donate">
+        <div class="popup">
+            <h1>Donate</h1>
+            <p align="center">
+            <h3><span class="font-size=larger">Отправляя донат, вы поддерживаете автора и оплачиваете ему ужин.</span>
+            </h3>
+            <h2>Select payment method</h2>
+            <p align="center">
+                <input type="button" class="btn" value="QIWI" onclick="location.href='https://qiwi.com/n/SMOK228'">
+                <br>
+                <input type="button" class="btn" value="YooMoney"
+                    onclick="location.href='https://yoomoney.ru/to/4100116687189650'">
+                <input type="button" class="btn" value="Donation Alerts"
+                    onclick="location.href='https://www.donationalerts.com/r/davhell'">
+            </p>
+            <p align="center"><input class="btn" type="button" value="Close" title="Close"
+                    onclick="document.getElementById('donate').style.display='none';"></p>
+            </p>
+        </div>
+    </div>
     <header class="center info">
         <div class="center pizdec">
             <div class="avatar-container"><img src="assets/images/ava.jpg" oncontextmenu="return false;" class="avatar">
@@ -51,7 +71,8 @@
             <a href="javascript://" class="link" onclick="location.href='projects'">Projects</a>
         </div>
         <div class="buttons">
-            <a href="javascript://" class="link" onclick="location.href='http://qiwi.com/n/SMOK228'">Qiwi</a>
+            <a href="javascript://" class="link"
+                onclick="document.getElementById('donate').style.display='block'">Donate</a>
         </div>
         <div class="center pizdec">
             <h2>Music</h2>

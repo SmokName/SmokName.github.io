@@ -137,7 +137,7 @@ a.nolink {
 }
 
 .social a:hover {
-    color:#000000;
+    color: #dc3545;
 }
 
 .social a:active {
@@ -155,7 +155,7 @@ a.nolink {
 }
 
 .social-icon:hover {
-    fill: #000000;
+    fill: #f44336;
 }
 
 .tooltip-inner {
@@ -198,7 +198,7 @@ a.btn-donut {
     line-height: 1.5;
     font-size: 18px;
     border-radius: 50px;
-    font-family: 'Product Sans';
+    font-family: Google Sans Regular;
     text-decoration: none;
 }
 
