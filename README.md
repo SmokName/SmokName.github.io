@@ -1,3 +1,3 @@
-sm0ke.ml
+smokname.github.io
 
 
